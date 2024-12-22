@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #15171716;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px 0;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #4CAF50;
+        }
+
+        footer {
+            background-color: #333;
+        }
+
+        .code-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 15px;
+            font-family: monospace;
+            color: #333;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>آموزش پایتون</h1>
+    </header>
+
+    <nav>
+        <a href="#section1">مقدمه</a>
+        <a href="#section2">نصب پایتون</a>
+        <a href="#section3">شروع</a>
+    </nav>
+
+    <div class="container">
+        <div id="section1" class="section">
+            <h2>معرفی پایتون</h2>
+            <p>پایتون یک زبان برنامه نویسی سطح بالا است که یادگیری آن آسان است و به طور گسترده برای توسعه وب، علم داده، اتوماسیون و غیره استفاده می شود. به دلیل نحو ساده و خوانا معروف است.</p>
+            <P>برای:
+                توسعه وب،
+                توسعه نرم افزار موبایل و کامپیوتر،
+                هوش مصنوعی،
+                کار با داده ها... استفاده میشود</P>
+        </div>
+
+        <div id="section2" class="section">
+            <h2>نصب پایتون</h2>
+            <p>قبل از شروع این دوره آموزشی پایتون ابتدا باید پایتون را روی کامپیوتر خود نصب کنید. برای نصب پایتون بر روی کامپیوتر خود، مراحل زیر را دنبال کنید:
+
+                دانلود پایتون: به <a href="https://www.python.org/">وب سایت رسمی پایتون</a> در بروید. در صفحه اصلی، بخش "دانلودها" را مشاهده خواهید کرد. بر روی دکمه "دانلود پایتون" کلیک کنید.</p>
+        </div>
+
+        <div id="section3" class="section">
+            <h2>شروع اموزش پایتون</h2>
+            <p>Variables are used to store data values. In Python, you do not need to declare the type of a variable; Python automatically determines it based on the value assigned.</p>
+            <div class="code-box">
+                x = 5<br>
+                y = "Hello, World!"<br>
+                print(x)<br>
+                print(y)
+            </div>
+            <p>Here, <code>x</code> is assigned an integer value and <code>y</code> is assigned a string. The <code>print()</code> function is used to display the values.</p>
+        </div>
+
+        <div id="section4" class="section">
+            <h2>Functions in Python</h2>
+            <p>Functions in Python allow you to group code into reusable blocks. You can define a function using the <code>def</code> keyword.</p>
+            <div class="code-box">
+                def greet(name):<br>
+                &nbsp;&nbsp;&nbsp;print("Hello, " + name)<br><br>
+                greet("Alice")
+            </div>
+            <p>This function <code>greet()</code> takes one parameter and prints a greeting message using the passed argument.</p>
+        </div>
+
+        <div id="section5" class="section">
+            <h2>Loops in Python</h2>
+            <p>Loops allow you to execute a block of code multiple times. Python supports two types of loops: <code>for</code> and <code>while</code>.</p>
+            <div class="code-box">
+                for i in range(5):<br>
+                &nbsp;&nbsp;&nbsp;print(i)
+            </div>
+            <p>The <code>for</code> loop above prints numbers from 0 to 4. The <code>range(5)</code> function generates a sequence of numbers from 0 to 4.</p>
+        </div>
+    </div>
+</body>
+</html>
